@@ -13,7 +13,7 @@ interface Challenge{
 interface ChallengesContextdata{
     level:number;
     levelUp:()=>void;
-    currentExperience:number;
+    currentExperience:()=>void;
     challengesCompleted:()=>void;
     startNewChallnge:()=>void;
     resetChallenge:()=>void;
