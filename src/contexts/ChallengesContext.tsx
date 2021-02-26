@@ -12,15 +12,15 @@ interface Challenge{
 }
 interface ChallengesContextdata{
     level:number;
+    currentExperience:number;
+    experienceToNextlevel:number;
+    challengesCompleted:number;
+    activeChallenge:Challenge;
     levelUp:()=>void;
-    currentExperience:()=>void;
-    challengesCompleted:()=>void;
     startNewChallnge:()=>void;
     resetChallenge:()=>void;
     completeChallenge:()=>void;
     closeLevelUpModal:()=>void;
-    activeChallenge:Challenge;
-    experienceToNextlevel:number;
 }
 
 interface ChallengesProviderProps{
