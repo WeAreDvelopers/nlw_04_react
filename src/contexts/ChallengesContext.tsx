@@ -17,7 +17,7 @@ interface ChallengesContextdata{
     challengesCompleted:number;
     activeChallenge:Challenge;
     levelUp:()=>void;
-    startNewChallnge:()=>void;
+    startNewChallenge:()=>void;
     resetChallenge:()=>void;
     completeChallenge:()=>void; 
     closeLevelUpModal:()=>void;
