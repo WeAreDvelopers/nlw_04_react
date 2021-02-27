@@ -20,7 +20,7 @@ export const CountDownContext = createContext({} as CountdDownContextData);
 
 export function CountDownProvider({children} :  CountdDownProviderProps){
     const {startNewChallenge} = useContext(ChallengesContext)
-    const [time, setTime] = useState(0.1 * 60);
+    const [time, setTime] = useState(25 * 60);
     const [isActive,setisActive] = useState(false)
     const [hasFinished,setHasFinished] = useState(false)
 
@@ -33,7 +33,7 @@ export function CountDownProvider({children} :  CountdDownProviderProps){
     function resetCountDown(){
         clearTimeout(countDownTimeout)
         setisActive(false); // para contagem
-        setTime(0.1*60) // volta relogio
+        setTime(25*60) // volta relogio
         setHasFinished(false)
     }
     useEffect(
